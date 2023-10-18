@@ -35,6 +35,12 @@ p {
     margin: 15px 0 20px 0;
 }
 
+#header .logo {
+    background-color: #1a1a1a;
+    padding: 0 15px 0 15px;
+    border-radius: 5px;
+}
+
 .section-p1 {
     padding: 40px 80px;
 }
@@ -147,12 +153,17 @@ body {
     justify-content: center;
 }
 
-#hero h4 {
-    padding-bottom: 15px;
+#hero h1 {
+    color: #cdebbc;
 }
 
-#hero h1 {
-    color: #088178;
+#hero h2 {
+    padding-top: 200px;
+    color: #cdebbc;
+}
+
+#hero p {
+    color: #fff;
 }
 
 #hero button {
@@ -485,6 +496,9 @@ footer .col {
 }
 
 footer .logo {
+    background-color: #1a1a1a;
+    padding: 0 15px 0 15px;
+    border-radius: 5px;
     margin-bottom: 30px;
 }
 
