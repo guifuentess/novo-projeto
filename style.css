@@ -100,6 +100,29 @@ body {
     padding: 30px;
 }
 
+/*Barra de Pesquisa*/
+
+
+#listaProdutos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#listaProdutos li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+}
+
 #navbar li {
     list-style: none;
     padding: 0 20px;
