@@ -159,11 +159,13 @@ body {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 360px;
-    min-height: 100vh;
+    width: 400px;
+    min-height: 100%;
+    max-height: 100%;
     background: #e9eaee;
     box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
     transition: 0.3s;
+    overflow: scroll;
 }
 
 .cart-popap.active {
@@ -181,7 +183,6 @@ body {
     display: grid;
     grid-template-columns: 32% 50% 18%;
     align-items: center;
-    gap: 1rem;
     margin-top: 1rem;
 }
 
