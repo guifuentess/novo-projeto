@@ -4,7 +4,7 @@ body {
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: url(../img/backgroud.jpg);
+    background-image: url(../img/background.png);
     background-position: 30% 45%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
