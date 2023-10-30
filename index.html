@@ -11,6 +11,12 @@
     
     <section id="header">
         <a href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+        <div class="buscar">
+            <input id="inputBusca" class="txtbar" onkeyup="filtrar()" type="text" placeholder="Pesquisar...">
+            <ul id="listaProdutos">
+                
+            </ul>
+        </div>
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Inicio</a></li>
@@ -53,7 +59,7 @@
         <p>Mergulhe na gang, eleve seu espirito</p>
         <div class="pro-container">
             <div class="pro">
-                <img src="img/products/f1.jpg" alt="" class="product-img" onclick="window.location.href='products/sproduct.html';">
+                <img id="img1" src="img/products/f1.jpg" alt="" class="product-img" onclick="window.location.href='products/sproduct.html';">
                 <div class="des">
                     <span>SPLASHWEAR</span>
                     <h5 class="product-title">CAMISETA SAMURAI</h5>

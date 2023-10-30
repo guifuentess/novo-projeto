@@ -99,15 +99,33 @@ body {
 
 /*Barra de Pesquisa*/
 
-
-#listaProdutos {
+.buscar {
+    width: 100%;
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
-    width: 95%;
+    position: relative;
+}
+
+.txtbar {
+    width: 90%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 22px;
+    border: 1px solid #ddd;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+#listaProdutos {
+    position: absolute;
+    display: none;
+    width: 90%;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    top: 70px;
 }
 
 #listaProdutos li a {
@@ -118,6 +136,15 @@ body {
     color: black;
     border: 1px solid #ddd;
     background: #f6f6f6;
+    padding: 12px;
+}
+
+#listaProdutos li a:hover {
+    background: #eee;
+}
+
+.item-name {
+    margin-left: 15px;
 }
 
 #navbar li {
