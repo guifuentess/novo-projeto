@@ -146,7 +146,7 @@ function updatetotal() {
         document.getElementsByClassName("total-price")[0].innerText = "R$" + total;
 }
 
-//carrinho de compras
+//Barra de pesquisa
 fetch('https://fakestoreapi.com/products?limit=50')
             .then(res=>res.json())
             .then((json) => {
