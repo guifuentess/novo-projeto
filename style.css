@@ -903,97 +903,288 @@ footer .copyright {
     color: #000;
 }
 
-/*Checkou Page*/
-
-.checkoutLayout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+/*Checkout Page*/
+.checkout-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 541px;
+    min-height: 100vh;
     padding: 20px;
-    height: 900px;
+    background-color: #cdd4f8;
+    box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
 }
 
-.checkoutLayout h1 {
-    color: #fff;
+.checkout-page.active{
+    left: 0;
 }
 
-.checkoutLayout .right {
-    background-color: #5358b3;
-    border-radius: 20px;
-    padding: 20px;
-    color: #fff;
+.show .checkout-page {
+    right: calc(100% - 75%);
 }
 
-.checkoutLayout .list img {
+.step1 {
+    width: 40%;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.step1 h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: #2b0086;
+    text-align: center;
+}
+
+.checkout-page form {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+
+.input-box2 {
+    width: 100%;
     height: 70px;
+    border-bottom: 2px solid #162938;
+    margin-bottom: 20px;
+
 }
-.checkoutLayout .right .form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    border-bottom: 1px solid #7a7fe2;
+
+.input-box2 label {
+    top: 50%;
+    left: 5px;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.input-box2 input {
+    width: 100%;
+    height: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.checkbox-promo {
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.checkbox-promo label input {
+    margin-bottom: 10px;
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.checkbox-gender {
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-gender h6 {
+    font-size: 500;
+}
+
+.checkbox-gender label input {
+    margin-bottom: 10px;
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.step2 {
+    right: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.step2 h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: #2b0086;
+    text-align: center;
+}
+
+.step2 h6 {
     padding-bottom: 20px;
 }
 
-.checkoutLayout .form input,
-.checkoutLayout .form select {
-    width: 100%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    margin-top: 10px;
-    border: none;
-    background-color: #6a6fc9;
-    color: #fff;
+.payment {
+    display: flex;
+    align-items: center; 
+    border: 1px solid  gray;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
-.checkoutLayout .row {
+.payment span {
+    font-size: 1.5em;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.payment p {
+    margin-top: 13px;
+}
+
+.pay1 .step2-payment-method {
+    transform: translateX(500px);
+    pointer-events: none;
+    display: none;
+
+}
+
+.credit-card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.none .credit-card {
+    display: none;
+    transform: translateX(-500px);
+}
+
+ .credit-card {
+    display: flex;
+    flex-direction: column; 
+}
+
+ .credit-card span {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+ .credit-card h6 {
+    font-size: 1em;
     margin-top: 10px;
 }
 
-.checkoutLayout .row div:nth-child(2) {
-    font-weight: bold;
-    font-size: x-large;
+ .credit-card-title {
+    display: flex;
 }
 
-.buttonCheckout {
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    margin-top: 70%;
-    font-weight: bold;
-    color: #fff;
-    background-color: #49d8b9;
+.alterar {
+    font-size: 0.9em;
+    color: #2b0086;
+    cursor: pointer;
 }
 
-.returnCart h1 {
-    border-top: 1px solid #eee;
-    padding: 20px 0;
+.alterar:hover {
+    text-decoration: underline;
 }
 
-.returnCart .list .item img {
-    height: 80px;
-}
-
-.returnCart  .item {
-    display: grid;
-    grid-template-columns: 80px 1fr 50px 80px;
+.safe {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    margin-bottom: 30px;
-    padding: 15px;
-    box-shadow: 0 10px 20px #555;
-    border-radius: 20px;
+    border-radius: 5px;
+    background-color: #dddddd;
+    margin-bottom: 10px;
 }
 
-.returnCart .item .name,
-.returnCart .item .returnPrice {
-    font-size: x-large;
-    font-weight: bold;
+.safe span{
+    color: #007c2e;
+    margin: px;
+    font-size: 1em;
+}
+
+.safe p {
+    display: flex;
+    align-items: center;
+    font-size: 0.7em;
+    margin-top: 5%;
+    
+}
+
+.validade {
+    display: flex;
+
+}
+
+.validade h6 {
+    margin: 10px;
+    margin-top: 7%;
+}
+
+.validade .input-box2 {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.finish {
+    margin-top: 20px;
+    margin-bottom: -20px;
+    background-color: #009737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.finish span {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.finish h6 {
+    margin-top: 6%;
+    font-size: 1.4em;
+    color: #ffffff;
+}
+
+.back {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4267b3;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.back span {
+    font-size: 2em;
+    color: #ffffff;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.back h6 {
+    margin-top: 6%;
+    font-size: 1.4em;
+    color: #ffffff;
 }
 
 /*Media Query*/

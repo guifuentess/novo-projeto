@@ -28,10 +28,12 @@
                 <a href="#" id="close"><i class="fa fa-times"></i></a>
             </ul>
         </div>
+
         <div id="mobile">
             <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
+
         <div class="cart-popap">
             <h2 class="cart-title">Carrinho</h2>
             <div class="cart-content">
@@ -44,6 +46,147 @@
             <button class="normal btn-buy" type="button">Finalizar Compra</button>
             <i class="fa fa-times" id="close-cart"></i>
         </div>
+
+        <div class="checkout-page">
+            <div class="step1">
+  
+              <form action="">
+                <h2>Identificação</h2>
+  
+                <div class="input-box2">
+                  <label for="">Nome completo*</label>
+                 <input type="text" name="nome_completo" required>
+                </div>
+                
+  
+                <div class="input-box2">
+                  <label for="">CPF*</label>
+                  <input id="cpf" type="text" autocomplete="off"  required maxlength="14" placeholder="____ . ____ .  ____ - ___">
+                </div>
+               
+                 
+                <div class="input-box2">
+                  <label for="">Data de Nascimento*</label>
+                 <input type="text" required id="data" maxlength="10" placeholder="___  / ___  / ______">
+                </div> 
+   
+                 
+                <div class="input-box2">
+                  <label for="">Cep*</label>
+                 <input class="phone" id="cep" maxlength="9" required type="text" placeholder="_______ - ____"> 
+                </div>
+  
+  
+                <div class="input-box2">
+                  <label for="">Endereço*</label>
+                 <input class="phone" required type="text"> 
+                </div>
+  
+  
+                <div class="input-box2">
+                  <label for="">Cidade*</label>
+                 <input class="phone" required type="text" > 
+                </div>
+  
+  
+                <div class="input-box2">
+                  <label for="">Estado*</label>
+                 <input class="phone" required type="search"> 
+                </div>
+                
+  
+                  
+                <div class="checkbox-gender">
+                  <h6>Gênero</h6>
+                <label for=""><input type="checkbox">Masculino</label>
+                <label for=""><input type="checkbox">Feminino</label>
+                <label for=""><input type="checkbox">Outro</label>
+                </div>
+              
+              </div>
+  
+            </form>
+  
+            <div class="step2">
+              <form action="">
+                <h2>Pagamento</h2>
+               <div class="step2-payment-method">
+                <h6>Escolha a forma de pagamento</h6>
+                <div class="payment" id="credit-card">
+                  <span><ion-icon name="card"></ion-icon></span> <p>Cartão de crédito</p>
+                </div> 
+                <div class="payment">
+                  <span><ion-icon name="qr-code-outline"></ion-icon></span> <p>Pix à vista</p>
+                </div>
+                <div class="payment">
+                  <span><i class="fa-solid fa-barcode"></i></span> <p>Boleto à vista</p> 
+                </div>             
+                </div>
+                
+                <div class="credit-card">
+  
+                  <div class="credit-card-header">
+                    <div class="credit-card-title">
+                      <span><ion-icon name="card"></ion-icon></span> <h6>
+                        Cartão de crédito
+                      </h6>
+                    </div>
+                    <div class="alterar" id="alterar"><p>Alterar forma de pagamento</p></div>
+                  </div>
+  
+                  <div class="safe">
+                    <span><i class="fa-solid fa-lock"></i></span> <p>Este é um pagamento seguro, realizado em ambiente criptografado.</p>
+                  </div>
+  
+                  <div class="input-box2">
+                    <label for="">Número do cartão de crédito*</label>
+                    <input type="text" id="card-number" maxlength="19" required autocomplete="off" placeholder="_____ . _____ . _____ . _____">
+                  </div>
+  
+                  <div class="input-box2">
+                    <label for="">Nome impresso no cartão*</label>
+                    <input type="text" required autocomplete="off">
+                </div>
+  
+                <div class="input-box2">
+                  <label for="">CPF do títular*</label>
+                  <input  required id="cepeefi" type="text" autocomplete="off" maxlength="14" placeholder="____ . ____ .  ____ - ___">
+                </div>
+  
+                <div class="valiade-cvv">
+                  <div class="validade">
+                    
+                    <div class="input-box2">
+                      <label for="">Validade*</label>
+                    <input type="text" maxlength="10" id="validade" required placeholder="dd/mm/aaaa">
+                    </div>
+  
+                    <div class="input-box2">
+                      <label for="">CVV/CVC*</label>
+                      <input type="text" id="CVV" placeholder="***"  required maxlength="4">
+                    </div>  
+  
+                  </div>
+                  
+                    </div>
+  
+                    <button type="submit" class="finish">
+                      <span><i class="fa-solid fa-truck-fast"></i></span> 
+                      <h6>Finalizar compra</h6>
+                    </button> 
+                  </div>             
+  
+                           
+  
+              </form>
+              
+                <div class="back">
+                    <span><ion-icon name="return-down-back-outline"></ion-icon></span> <h6>Continuar comprando</h6>
+                </div>
+              
+            </div>     
+  
+        </div>  
     </section>
 
     <section id="hero">
