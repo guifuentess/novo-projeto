@@ -188,7 +188,7 @@ body {
     max-height: 100%;
     background: #e9eaee;
     box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
-    transition: 0.3s;
+    transition: 0.4s;
     overflow: scroll;
 }
 
@@ -905,26 +905,27 @@ footer .copyright {
 
 /*Checkout Page*/
 .checkout-page {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
     position: fixed;
     top: 0;
-    left: 0;
-    width: 541px;
+    left: -100%;
+    width: 79%;  
+    display: grid;
     min-height: 100vh;
     padding: 20px;
-    background-color: #cdd4f8;
+    gap: 20px;
+    background: #e9eaee;
     box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+    transition: 0.4s;
 }
 
 .checkout-page.active{
     left: 0;
 }
 
-.show .checkout-page {
-    right: calc(100% - 75%);
-}
-
 .step1 {
-    width: 40%;
+    width: 100%;
     display: inline-block;
     flex-direction: row;
     align-items: center;
@@ -936,14 +937,13 @@ footer .copyright {
     justify-content: center;
     padding-bottom: 10px;
     font-size: 2em;
-    color: #2b0086;
     text-align: center;
 }
 
 .checkout-page form {
     display: flex;
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     justify-content: center;
     flex-direction: column;
     border: solid 2px gray;
@@ -1009,7 +1009,7 @@ footer .copyright {
 
 .step2 {
     right: 0;
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1022,7 +1022,6 @@ footer .copyright {
     justify-content: center;
     padding-bottom: 10px;
     font-size: 2em;
-    color: #2b0086;
     text-align: center;
 }
 
@@ -1032,15 +1031,10 @@ footer .copyright {
 
 .payment {
     display: flex;
-    align-items: center; 
     border: 1px solid  gray;
-    border-radius: 5px;
-    padding: 5px;
     cursor: pointer;
-    font-size: 1em;
-    color: #162938;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .payment span {
@@ -1078,7 +1072,7 @@ footer .copyright {
 }
 
  .credit-card span {
-    font-size: 2em;
+    font-size: 1em;
     margin-right: 10px;
 }
 
@@ -1140,13 +1134,12 @@ footer .copyright {
 }
 
 .finish {
-    margin-top: 20px;
-    margin-bottom: -20px;
+    height: 50px;
+    margin-top: 0px;
     background-color: #009737;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     cursor: pointer;
     border: none;
 }
@@ -1158,20 +1151,20 @@ footer .copyright {
 }
 
 .finish h6 {
-    margin-top: 6%;
+    margin-top: 4%;
     font-size: 1.4em;
     color: #ffffff;
 }
 
 .back {
-    margin-top: 20px;
+    height: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #4267b3;
-    border-radius: 10px;
     cursor: pointer;
-    width: 80%;
+    width: 94%;
 }
 
 .back span {
@@ -1182,7 +1175,7 @@ footer .copyright {
 }
 
 .back h6 {
-    margin-top: 6%;
+    margin-top: 4%;
     font-size: 1.4em;
     color: #ffffff;
 }

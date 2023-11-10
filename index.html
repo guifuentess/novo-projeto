@@ -7,7 +7,7 @@
     <title>SPLASHWEAR</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body">
     
     <section id="header">
         <a href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
@@ -43,11 +43,11 @@
                 <div class="total-title">Total</div>
                 <div class="total-price">R$0</div>
             </div>
-            <button class="normal btn-buy" type="button">Finalizar Compra</button>
+            <button id="buy" class="normal btn-buy" type="button">Finalizar Compra</button>
             <i class="fa fa-times" id="close-cart"></i>
         </div>
 
-        <div class="checkout-page">
+        <div class="checkout-page" id="checkout">
             <div class="step1">
   
               <form action="">
@@ -92,15 +92,6 @@
                 <div class="input-box2">
                   <label for="">Estado*</label>
                  <input class="phone" required type="search"> 
-                </div>
-                
-  
-                  
-                <div class="checkbox-gender">
-                  <h6>Gênero</h6>
-                <label for=""><input type="checkbox">Masculino</label>
-                <label for=""><input type="checkbox">Feminino</label>
-                <label for=""><input type="checkbox">Outro</label>
                 </div>
               
               </div>
